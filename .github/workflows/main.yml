@@ -1,0 +1,32 @@
+name: PHPStan
+
+on: [push, pull_request]
+
+jobs:
+  phpstan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Create Vendor Directory
+        run: |
+          echo Making directory...
+          mkdir vendor
+          echo Directory made.
+      - name: wget PiggyCustomEnchants
+        uses: wei/wget@v1
+        with:
+          args: -O vendor/PiggyCustomEnchants.phar https://poggit.pmmp.io/r/76547/PiggyCustomEnchants_pr-79.phar
+      - name: wget FactionsPE
+        uses: wei/wget@v1
+        with:
+          args: -O vendor/FactionsPE.phar https://poggit.pmmp.io/r/53057/FactionsPE_dev-64.phar
+      - name: wget FactionsPro
+        uses: wei/wget@v1
+        with:
+          args: -O vendor/FactionsPro.phar https://poggit.pmmp.io/r/64635/FactionsPro_dev-52.phar
+      - name: Run PHPStan
+        uses: nxtlvlsoftware/pmmp-phpstan-action@3
+        with:
+          phpstan-config: phpstan.neon.dist
