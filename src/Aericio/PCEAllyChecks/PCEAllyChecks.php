@@ -46,9 +46,9 @@ class PCEAllyChecks extends PluginBase
      */
     public function getFactionsPro(): ?FactionMain
     {
-        /* @var FactionMain $factionspro */
         $factionspro = $this->getServer()->getPluginManager()->getPlugin('FactionsPro');
-        return $factionspro ?? null;
+        if ($factionspro instanceof FactionMain) return $factionspro;
+        return null;
     }
 
     /**
@@ -56,8 +56,8 @@ class PCEAllyChecks extends PluginBase
      */
     public function getFactionsPE(): ?FactionsPE
     {
-        /* @var FactionsPE $factionspe */
         $factionspe = $this->getServer()->getPluginManager()->getPlugin('FactionsPE');
-        return $factionspe ?? null;
+        if ($factionspe instanceof FactionsPE) return $factionspe;
+        return null;
     }
 }
