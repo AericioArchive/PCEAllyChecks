@@ -1,4 +1,4 @@
-# PCEAllyChecks [![Poggit-CI](https://poggit.pmmp.io/ci.badge/Aericio/PCEAllyChecks/PCEAllyChecks/master)]
+# PCEAllyChecks [![Poggit-CI](https://poggit.pmmp.io/ci.badge/Aericio/PCEAllyChecks/PCEAllyChecks/master)](https://poggit.pmmp.io/p/PCEAllyChecks)
 
 PCEAllyChecks is an extension to the [PiggyCustomEnchants](https://github.com/DaPigGuy/PiggyCustomEnchants/) plugin which utilizes the AllyChecks feature introduced in [v2.1.0](https://github.com/DaPigGuy/PiggyCustomEnchants/pull/257).
 
