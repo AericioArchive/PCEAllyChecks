@@ -20,6 +20,8 @@ $RECYCLE.BIN/
 # JetBrains IDE
 \.idea/
 
-# Floobits
-\.floo
-\.flooignore
+# Plugin Files
+FactionsPE_dev-64.phar
+FactionsPro.phar
+Slapper.phar
+WorldGuard_dev-86.phar

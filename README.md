@@ -5,6 +5,8 @@ PCEAllyChecks is an extension to the [PiggyCustomEnchants](https://github.com/Da
 Currently, the following plugins are supported:
 * [FactionsPE](https://github.com/BlockHorizons/FactionsPE)
 * [FactionsPro](https://github.com/poggit-orphanage/FactionsPro)
+* [Slapper](https://github.com/jojoe77777/Slapper)
+* [WorldGuard](https://github.com/Chalapa13/WorldGuard)
 
 PCEAllyChecks will prevent certain custom enchants from affecting your faction members/allies:
 * AutoAim
@@ -15,6 +17,14 @@ PCEAllyChecks will prevent certain custom enchants from affecting your faction m
 * Lightning
 * Poisonous Cloud
 * Wither Skull
+
+It will also prevent custom enchantments from affecting [Slappers](https://github.com/jojoe77777/Slapper) + areas protected by [WorldGuard](https://github.com/Chalapa13/WorldGuard).
+
+### Support a Plugin
+If you would like to request a plugin to be supported by PCEAllyChecks, please create an issue.
+
+Denied Requests
+* [Festival](https://github.com/genboy/Festival): Horrible API. Horrible, as in none at all.
 
 ### License
 ```

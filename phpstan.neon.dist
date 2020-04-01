@@ -9,6 +9,8 @@ parameters:
     - phar:///source/vendor/PiggyCustomEnchants.phar/src/
     - phar:///source/vendor/FactionsPE.phar/src/
     - phar:///source/vendor/FactionsPro.phar/src/
+    - phar:///source/vendor/Slapper.phar/src/
+    - phar:///source/vendor/WorldGuard.phar/src/
   excludes_analyse:
     - source/vendor
   reportUnmatchedIgnoredErrors: false

@@ -17,7 +17,7 @@ jobs:
       - name: wget PiggyCustomEnchants
         uses: wei/wget@v1
         with:
-          args: -O vendor/PiggyCustomEnchants.phar https://poggit.pmmp.io/r/76547/PiggyCustomEnchants_pr-79.phar
+          args: -O vendor/PiggyCustomEnchants.phar https://poggit.pmmp.io/r/80438/PiggyCustomEnchants_dev-429.phar
       - name: wget FactionsPE
         uses: wei/wget@v1
         with:
@@ -26,6 +26,14 @@ jobs:
         uses: wei/wget@v1
         with:
           args: -O vendor/FactionsPro.phar https://poggit.pmmp.io/r/64635/FactionsPro_dev-52.phar
+      - name: wget Slapper
+        uses: wei/wget@v1
+        with:
+          args: -O vendor/Slapper.phar https://poggit.pmmp.io/r/79916/Slapper_dev-72.phar
+      - name: wget WorldGuard
+        uses: wei/wget@v1
+        with:
+          args: -O vendor/WorldGuard.phar hhttps://poggit.pmmp.io/r/77573/WorldGuard_dev-86.phar
       - name: Run PHPStan
         uses: nxtlvlsoftware/pmmp-phpstan-action@3
         with:
