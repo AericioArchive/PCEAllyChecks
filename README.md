@@ -1,4 +1,4 @@
-# PCEAllyChecks [![Poggit-CI](https://poggit.pmmp.io/ci.badge/Aericio/PCEAllyChecks/PCEAllyChecks/master)](https://poggit.pmmp.io/ci/Aericio/PCEAllyChecks/PCEAllyChecks/)
+# PCEAllyChecks [![Poggit-CI](https://poggit.pmmp.io/shield.dl/PCEAllyChecks)](https://poggit.pmmp.io/p/PCEAllyChecks) [![Discord](https://img.shields.io/discord/330850307607363585?logo=discord)](https://discord.gg/qmnDsSD)
 
 PCEAllyChecks is an extension to the [PiggyCustomEnchants](https://github.com/DaPigGuy/PiggyCustomEnchants/) plugin which utilizes the AllyChecks feature introduced in [v2.1.0](https://github.com/DaPigGuy/PiggyCustomEnchants/pull/257).
 
@@ -20,7 +20,7 @@ PCEAllyChecks will prevent certain custom enchants from affecting your faction m
 
 It will also prevent custom enchantments from affecting [Slappers](https://github.com/jojoe77777/Slapper) + areas protected by [WorldGuard](https://github.com/Chalapa13/WorldGuard).
 
-### Support a Plugin
+### Requests
 If you would like to request a plugin to be supported by PCEAllyChecks, please create an issue.
 
 Denied Requests
