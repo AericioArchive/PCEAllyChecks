@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Aericio\PCEAllyChecks;
 
+use Aericio\PCEAllyChecks\tasks\CheckUpdatesTask;
 use Chalapa13\WorldGuard\Region;
 use Chalapa13\WorldGuard\WorldGuard;
 use DaPigGuy\PiggyCustomEnchants\utils\AllyChecks;
@@ -26,6 +27,8 @@ class PCEAllyChecks extends PluginBase
 {
     public function onEnable(): void
     {
+        $this->getServer()->getAsyncPool()->submitTask(new CheckUpdatesTask($this->getDescription()->getVersion(), $this->getDescription()->getCompatibleApis()[0]));
+
         if (!is_null($this->getFactionsPro())) {
             AllyChecks::addCheck($this, function (Player $player, Entity $entity): bool {
                 $pl = $this->getFactionsPro();
